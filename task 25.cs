@@ -4,7 +4,7 @@
 2, 4 -> 16*/
 
 Console.Clear();
-int InputNumber(ref int count)
+int InputNumber(ref int count) //ввод значений и проверка
 {
     count++;
     while (true)
@@ -16,17 +16,17 @@ int InputNumber(ref int count)
         Console.WriteLine("Ошибка ввода");
     }
 }
-int MathHw(int A, int B)
+int MathHw(int A, int B) // проведение расчетов
 {
     int rez = Convert.ToInt32(Math.Pow(A, B));
     return rez;
 }
-int count = 0;
+int count = 0; //счетчик для именования переменных
 int num1 = InputNumber(ref count);
 int num2 = InputNumber(ref count);
 int rez = MathHw(num1, num2);
 
-Console.Write(rez);
+Console.Write(rez); // вывод результата на экран
 
 
 
